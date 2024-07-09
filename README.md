@@ -1,7 +1,7 @@
 # Introduction to System on Chip Design
 
 - This repository is based on [Introduction to System on Chip Design Education Kit by Arm](https://www.arm.com/resources/education/education-kits/introduction-to-soc).
-- Keil MDK is a complete software development environment for Arm Cortex-M based microcontroller devices. It is used to generate a code.hex file which can be used to program the SoC using Assembly or C code.
+- Keil MDK is a complete software development environment for Arm Cortex-M-based microcontroller devices. It is used to generate a code.hex file which can be used to program the SoC using Assembly or C code.
 - The projects explore System-on-Chip design and programming a simple SoC, Cortex-M0, implemented on an FPGA.
 - The FPGA Board used &rarr; **XC7A100Tcsg324-1**
 - Vivado 2022.2 is the version used.
@@ -22,7 +22,7 @@
 1. Programming an SoC using C Language
 1. Application Programming Interface (API)
 1. Combining all topics to create a 2 player snake game
-1. Creating a novel math guessing game
+1. Creating a novel Arithmetic guessing game
 
 
 ## Update Bitstream Guide
