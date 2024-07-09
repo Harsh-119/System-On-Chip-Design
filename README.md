@@ -4,6 +4,7 @@
 - Keil MDK is a complete software development environment for Arm Cortex-M based microcontroller devices. It is used to generate a code.hex file which can be used to program the SoC using Assembly or C code.
 - The projects explore System-on-Chip design and programming a simple SoC, Cortex-M0, implemented on an FPGA.
 - The FPGA Board used &rarr; **XC7A100Tcsg324-1**
+- Vivado 2022.2 is the version used.
 
 
 
