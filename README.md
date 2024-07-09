@@ -16,7 +16,7 @@
 1. AMBA 3 AHB-Lite Bus Architecture
 1. AHB VGA Peripheral
 1. AHB UART Peripheral 
-1. Timer, GPIO and 7-Segment Peripherals
+1. LED, Timer, GPIO and 7-Segment Peripherals
 1. Interrupt Mechanisms 
 1. Programming an SoC using C Language
 1. Application Programming Interface (API)
