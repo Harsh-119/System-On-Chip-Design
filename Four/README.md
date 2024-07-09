@@ -9,18 +9,18 @@ This lab focuses on implementing a simple SoC, the Coretx-M0 Processor, AHB-Lite
 
 # Results
 
-<img width="379" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/6a4ae69d-3267-4c8a-8f6d-16ab4f89671c">
+<img width="380" alt="Shapes" src="Images/Geometrical_Shapes.png">
 
 - Image of 4 geometrical shapes and Name (these changes were done by modifying assembly code)
 
 
-<img width="338" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/d641255f-48f6-4cff-8767-b7cb090f068b">
+<img width="340" alt="Kanji" src="Images/H_in_Kanji.png">
 
 - To display the modified letter the original ‘H’ value has been edited so that the Japanese Kanji Character for ‘Harsh’ is drawn out and mapped. Upon the ASCII entry for the English letter ‘H’ the output will be 苛. (changes made to font_rom.v)
 
 ---
 
-<img width="800" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/d5a1e8ff-4dda-4bd6-968b-e0a92559a3bf">
+<img width="800" alt="VGA_Block" src="Images/VGA_Peripheral_Block.png">
 
 The VGA Peripheral that has been implemented is used as an interface for the AHB bus, and the output is displayed on a VGA monitor. The implemented peripheral has an AHB bus interface which the processor uses to control the VGA.
  

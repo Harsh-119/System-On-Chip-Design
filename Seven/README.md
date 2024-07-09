@@ -12,7 +12,7 @@ The interrupt service routine then services the switches. The switches will prev
 
 ---
 
-<img width="700" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/7f0f0c21-9d63-4ec3-ab2d-44a5f0817bc2">
+<img width="700" alt="Block Diagram" src="Images/Interrupt_Block.png">
 
 - The image shows an interrupt request signal named UART_irq tied to the receiver FIFO. The UART interrupt is different compared to the timer interrupt. The interrupt clear step can be disregarded as the interrupt will be automatically cleared after the data is read out from the FIFO.
 

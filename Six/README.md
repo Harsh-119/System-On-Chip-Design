@@ -10,13 +10,13 @@ The learning objectives are revolved around modifying the assembly code.
 
 # Results
 
-![fpga_led_7seg](https://github.com/Harsh-119/277a/assets/148488786/79d71dda-c1ad-468c-9bf2-fa46219f6bb6)
+![fpga_led_7seg](Images/GPIO_LED.jpeg)
 
 - The use of LED and switches has been done with the GPIO interfacing with the AHB lite bus which in turn allows communication with the CPU.
 
 ---
 
-<img width="600" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/59e60c6d-48e6-4c5f-bef7-e1d079ddc00e">
+<img width="600" alt="Timer_Block" src="Images/Timer_Block.png">
 
 - The implementation of the timer peripheral.
   The block diagram shows the AHB interface with the Data, Addr and Control lines.

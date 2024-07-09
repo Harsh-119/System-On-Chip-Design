@@ -12,7 +12,7 @@ The program targeted at the Cortex-M0 processor is written in assembly language 
 
 ---
 
-<img width="600" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/ccdbdb4b-6ac9-4651-b48a-288bb6d74081">
+<img width="600" alt="uart block" src="Images/UART_Block.png">
 
 - The UART transmitter reads data in the form of bytes from the transmitter FIFO and converts single-byte data to sequential bits.
 - It also sends bits to the TX pin; it is clocked at a fixed rate which is provided by the baud generator.

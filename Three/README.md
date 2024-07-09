@@ -4,12 +4,12 @@ This lab focuses on implementing on-chip memory and an LED peripheral. The proce
 
 # Results
 
-![led](https://github.com/Harsh-119/277a/assets/148488786/ae417ee1-5c0f-4521-8c29-9b2d5f7c26d0)
+![LED](Images/AHB_Lite_LED.png)
 
 - The LEDs activate when a button on FPGA is pressed. The generated hex files are for different assembly code outputs such as masked input/output, all on or off, and with a different pattern.
 
 ---
 
-<img width="452" alt="image" src="https://github.com/Harsh-119/277a/assets/148488786/9e8852f2-6891-46da-899a-113b18107606">
+<img width="450" alt="ahb lite block" src="Images/AHB_Lite_Block.png">
 
 - The on-chip memory is used to hold the code and data. An area is reserved for a stack, a memory type in which the processor Pushes data as a store function and it uses Pop to recover or push out the data. In order to program a processor the code has to be converted or compiled into machine code. This is the set of instructions that the processor will follow. The Control signal chooses the Memory and LED and the HWDATA and HADDR are used to write to the respective manager.

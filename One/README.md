@@ -4,7 +4,7 @@ This lab focuses on implementing an address decoder for a System-on-Chip (SoC) o
 
 ## Results
 
-![17A522B1-E9DD-42C9-BCC3-2A454EFCCB8D](https://github.com/Harsh-119/277a/assets/148488786/065c3428-25ca-402d-91ae-bb5cfa7de22c)
+![One/Images/tb_AHBDCD_Waveform.png](Images/tb_AHBDCD_Waveform.png)
 
 - The waveform shows that as each HADDR increments, which is the address, and as mux select increments each select 0-9 increments as such. For example, when HMUXSEL is high HSELS1 is high when HMUXSEL goes high for select 2 HSELS2 goes high and the previous signal is deserted. This repeats for S0-S9 until HSEL_NOMAP is active low.
 
