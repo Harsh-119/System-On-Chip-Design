@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1707808405">
+  <File Type="PA-TCL" Name="AHBDCD.tcl"/>
+  <File Type="REPORTS-TCL" Name="AHBDCD_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="AHBDCD.msk"/>
+  <File Type="RDI-RDI" Name="AHBDCD.vdi"/>
+  <File Type="BG-BIT" Name="AHBDCD.bit"/>
+  <File Type="BG-DRC" Name="AHBDCD.drc"/>
+  <File Type="BG-BGN" Name="AHBDCD.bgn"/>
+  <File Type="BG-BIN" Name="AHBDCD.bin"/>
+  <File Type="BITSTR-RBT" Name="AHBDCD.rbt"/>
+  <File Type="BITSTR-NKY" Name="AHBDCD.nky"/>
+  <File Type="BITSTR-BMM" Name="AHBDCD_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="AHBDCD.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="AHBDCD.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="AHBDCD.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="AHBDCD.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="AHBDCD_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="AHBDCD_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="AHBDCD_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="AHBDCD_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="AHBDCD_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="AHBDCD_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="AHBDCD_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="AHBDCD_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="AHBDCD_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="AHBDCD_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="AHBDCD_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="AHBDCD_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="AHBDCD.pdi"/>
+  <File Type="RCFI_FILE" Name="AHBDCD.rcfi"/>
+  <File Type="CFI_FILE" Name="AHBDCD.cfi"/>
+  <File Type="RNPI_FILE" Name="AHBDCD.rnpi"/>
+  <File Type="NPI_FILE" Name="AHBDCD.npi"/>
+  <File Type="RBD_FILE" Name="AHBDCD.rbd"/>
+  <File Type="ROUTE-RQS" Name="AHBDCD_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="AHBDCD_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/AHB_BUS/AHBDCD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/1/FPGA/FPGA/AHB_BUS/AHBDCD.v"/>
+        <Attr Name="ImportTime" Val="1646182272"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AHBDCD"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/FPGA/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/1/FPGA/FPGA/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1640790690"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

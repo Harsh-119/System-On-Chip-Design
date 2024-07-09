@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AHBDCD_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_AHBDCD" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="200.001 ns"></ZoomEndTime>
+      <Cursor1Time time="25.759 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="109"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_AHBDCD/t_HADDR" type="array">
+      <obj_property name="ElementShortName">t_HADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">t_HADDR[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S0" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S0</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S1" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S1</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S2" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S2</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S3" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S3</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S4" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S4</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S5" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S5</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S6" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S6</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S7" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S7</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S8" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S8</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_S9" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_S9</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_S9</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_HSEL_NOMAP" type="logic">
+      <obj_property name="ElementShortName">t_HSEL_NOMAP</obj_property>
+      <obj_property name="ObjectShortName">t_HSEL_NOMAP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AHBDCD/t_MUX_SEL" type="array">
+      <obj_property name="ElementShortName">t_MUX_SEL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">t_MUX_SEL[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

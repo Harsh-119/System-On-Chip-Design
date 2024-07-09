@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1710631676" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/AHBLITE_SYS.dcp">
+  <File Type="PA-TCL" Name="AHBLITE_SYS.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AHBLITE_SYS_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AHBLITE_SYS_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AHBLITE_SYS.vds"/>
+  <File Type="RDS-UTIL" Name="AHBLITE_SYS_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AHBLITE_SYS_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AHBLITE_SYS.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AHBLITE_SYS_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AHBLITE_SYS_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/AHB2BRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/AHB2BRAM.v"/>
+        <Attr Name="ImportTime" Val="1632705178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/AHB2LED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/AHB2LED.v"/>
+        <Attr Name="ImportTime" Val="1709843715"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/AHBDCD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/AHBDCD.v"/>
+        <Attr Name="ImportTime" Val="1632705176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/AHBMUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/AHBMUX.v"/>
+        <Attr Name="ImportTime" Val="1632705176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/CORTEXM0INTEGRATION.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/CORTEXM0INTEGRATION.v"/>
+        <Attr Name="ImportTime" Val="1506940730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/cortexm0ds_logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/cortexm0ds_logic.v"/>
+        <Attr Name="ImportTime" Val="1506940730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/AHBLITE_SYS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/AHBLITE_SYS.v"/>
+        <Attr Name="ImportTime" Val="1632707086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AHBLITE_SYS"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/New folder/Lab3_Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/New folder/Lab3_Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1709784745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/AHBLITE_SYS.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

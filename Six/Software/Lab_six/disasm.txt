@@ -1,0 +1,347 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: .\Objects\code.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x00000081
+    Flags: EF_ARM_HASENTRY (0x00000002)
+
+    ARM ELF revision: 0 (SDT / legacy GNU / unspecified)
+
+    Built with
+    Component: Arm Compiler for Embedded 6.21 Tool: armasm [5ec1f200]
+    Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 11
+
+    Program header offset: 1956 (0x000007a4)
+    Section header offset: 1988 (0x000007c4)
+
+    Section header string table index: 10
+
+========================================================================
+
+** Program header #0
+
+    Type          : PT_LOAD (1)
+    File Offset   : 52 (0x34)
+    Virtual Addr  : 0x00000000
+    Physical Addr : 0x00000000
+    Size in file  : 320 bytes (0x140)
+    Size in memory: 320 bytes (0x140)
+    Flags         : PF_X + PF_R + PF_ARM_ENTRY (0x80000005)
+    Alignment     : 4
+
+
+========================================================================
+
+** Section #1
+
+    Name        : ER_RO
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : SHF_ALLOC + SHF_EXECINSTR (0x00000006)
+    Addr        : 0x00000000
+    File Offset : 52 (0x34)
+    Size        : 320 bytes (0x140)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 4
+    Entry Size  : 0
+
+    $d.realdata
+    RESET
+    __Vectors
+        0x00000000:    00003ffc    .?..    DCD    16380
+        0x00000004:    00000081    ....    DCD    129
+        0x00000008:    00000000    ....    DCD    0
+        0x0000000c:    00000000    ....    DCD    0
+        0x00000010:    00000000    ....    DCD    0
+        0x00000014:    00000000    ....    DCD    0
+        0x00000018:    00000000    ....    DCD    0
+        0x0000001c:    00000000    ....    DCD    0
+        0x00000020:    00000000    ....    DCD    0
+        0x00000024:    00000000    ....    DCD    0
+        0x00000028:    00000000    ....    DCD    0
+        0x0000002c:    00000000    ....    DCD    0
+        0x00000030:    00000000    ....    DCD    0
+        0x00000034:    00000000    ....    DCD    0
+        0x00000038:    00000000    ....    DCD    0
+        0x0000003c:    00000000    ....    DCD    0
+        0x00000040:    00000000    ....    DCD    0
+        0x00000044:    00000000    ....    DCD    0
+        0x00000048:    00000000    ....    DCD    0
+        0x0000004c:    00000000    ....    DCD    0
+        0x00000050:    00000000    ....    DCD    0
+        0x00000054:    00000000    ....    DCD    0
+        0x00000058:    00000000    ....    DCD    0
+        0x0000005c:    00000000    ....    DCD    0
+        0x00000060:    00000000    ....    DCD    0
+        0x00000064:    00000000    ....    DCD    0
+        0x00000068:    00000000    ....    DCD    0
+        0x0000006c:    00000000    ....    DCD    0
+        0x00000070:    00000000    ....    DCD    0
+        0x00000074:    00000000    ....    DCD    0
+        0x00000078:    00000000    ....    DCD    0
+        0x0000007c:    00000000    ....    DCD    0
+    $t
+    .text
+    Reset_Handler
+        0x00000080:    4922        "I      LDR      r1,[pc,#136] ; [0x10c] = 0x50000000
+        0x00000082:    4a23        #J      LDR      r2,[pc,#140] ; [0x110] = 0x51000000
+        0x00000084:    2047        G       MOVS     r0,#0x47
+        0x00000086:    6008        .`      STR      r0,[r1,#0]
+        0x00000088:    6010        .`      STR      r0,[r2,#0]
+        0x0000008a:    4920         I      LDR      r1,[pc,#128] ; [0x10c] = 0x50000000
+        0x0000008c:    4a20         J      LDR      r2,[pc,#128] ; [0x110] = 0x51000000
+        0x0000008e:    2052        R       MOVS     r0,#0x52
+        0x00000090:    6008        .`      STR      r0,[r1,#0]
+        0x00000092:    6010        .`      STR      r0,[r2,#0]
+        0x00000094:    491d        .I      LDR      r1,[pc,#116] ; [0x10c] = 0x50000000
+        0x00000096:    4a1e        .J      LDR      r2,[pc,#120] ; [0x110] = 0x51000000
+        0x00000098:    204f        O       MOVS     r0,#0x4f
+        0x0000009a:    6008        .`      STR      r0,[r1,#0]
+        0x0000009c:    6010        .`      STR      r0,[r2,#0]
+        0x0000009e:    491b        .I      LDR      r1,[pc,#108] ; [0x10c] = 0x50000000
+        0x000000a0:    4a1b        .J      LDR      r2,[pc,#108] ; [0x110] = 0x51000000
+        0x000000a2:    2055        U       MOVS     r0,#0x55
+        0x000000a4:    6008        .`      STR      r0,[r1,#0]
+        0x000000a6:    6010        .`      STR      r0,[r2,#0]
+        0x000000a8:    4918        .I      LDR      r1,[pc,#96] ; [0x10c] = 0x50000000
+        0x000000aa:    4a19        .J      LDR      r2,[pc,#100] ; [0x110] = 0x51000000
+        0x000000ac:    2050        P       MOVS     r0,#0x50
+        0x000000ae:    6008        .`      STR      r0,[r1,#0]
+        0x000000b0:    6010        .`      STR      r0,[r2,#0]
+        0x000000b2:    4916        .I      LDR      r1,[pc,#88] ; [0x10c] = 0x50000000
+        0x000000b4:    4a16        .J      LDR      r2,[pc,#88] ; [0x110] = 0x51000000
+        0x000000b6:    2031        1       MOVS     r0,#0x31
+        0x000000b8:    6008        .`      STR      r0,[r1,#0]
+        0x000000ba:    6010        .`      STR      r0,[r2,#0]
+        0x000000bc:    4915        .I      LDR      r1,[pc,#84] ; [0x114] = 0x52000000
+        0x000000be:    4816        .H      LDR      r0,[pc,#88] ; [0x118] = 0xffffffff
+        0x000000c0:    6008        .`      STR      r0,[r1,#0]
+        0x000000c2:    4916        .I      LDR      r1,[pc,#88] ; [0x11c] = 0x52000008
+        0x000000c4:    2009        .       MOVS     r0,#9
+        0x000000c6:    6008        .`      STR      r0,[r1,#0]
+        0x000000c8:    4915        .I      LDR      r1,[pc,#84] ; [0x120] = 0x53000004
+        0x000000ca:    2000        .       MOVS     r0,#0
+        0x000000cc:    6008        .`      STR      r0,[r1,#0]
+        0x000000ce:    4915        .I      LDR      r1,[pc,#84] ; [0x124] = 0x53000000
+        0x000000d0:    680a        .h      LDR      r2,[r1,#0]
+        0x000000d2:    4913        .I      LDR      r1,[pc,#76] ; [0x120] = 0x53000004
+        0x000000d4:    2001        .       MOVS     r0,#1
+        0x000000d6:    6008        .`      STR      r0,[r1,#0]
+        0x000000d8:    4912        .I      LDR      r1,[pc,#72] ; [0x124] = 0x53000000
+        0x000000da:    600a        .`      STR      r2,[r1,#0]
+        0x000000dc:    4912        .I      LDR      r1,[pc,#72] ; [0x128] = 0x52000004
+        0x000000de:    680b        .h      LDR      r3,[r1,#0]
+        0x000000e0:    0e1b        ..      LSRS     r3,r3,#24
+        0x000000e2:    0018        ..      MOVS     r0,r3
+        0x000000e4:    4a11        .J      LDR      r2,[pc,#68] ; [0x12c] = 0xf
+        0x000000e6:    4010        .@      ANDS     r0,r0,r2
+        0x000000e8:    4911        .I      LDR      r1,[pc,#68] ; [0x130] = 0x54000000
+        0x000000ea:    6008        .`      STR      r0,[r1,#0]
+        0x000000ec:    0918        ..      LSRS     r0,r3,#4
+        0x000000ee:    4a0f        .J      LDR      r2,[pc,#60] ; [0x12c] = 0xf
+        0x000000f0:    4010        .@      ANDS     r0,r0,r2
+        0x000000f2:    4910        .I      LDR      r1,[pc,#64] ; [0x134] = 0x54000004
+        0x000000f4:    6008        .`      STR      r0,[r1,#0]
+        0x000000f6:    0a18        ..      LSRS     r0,r3,#8
+        0x000000f8:    4a0c        .J      LDR      r2,[pc,#48] ; [0x12c] = 0xf
+        0x000000fa:    4010        .@      ANDS     r0,r0,r2
+        0x000000fc:    490e        .I      LDR      r1,[pc,#56] ; [0x138] = 0x54000008
+        0x000000fe:    6008        .`      STR      r0,[r1,#0]
+        0x00000100:    0b18        ..      LSRS     r0,r3,#12
+        0x00000102:    4a0a        .J      LDR      r2,[pc,#40] ; [0x12c] = 0xf
+        0x00000104:    4010        .@      ANDS     r0,r0,r2
+        0x00000106:    490d        .I      LDR      r1,[pc,#52] ; [0x13c] = 0x5400000c
+        0x00000108:    6008        .`      STR      r0,[r1,#0]
+        0x0000010a:    e7dd        ..      B        0xc8 ; Reset_Handler + 72
+    $d
+        0x0000010c:    50000000    ...P    DCD    1342177280
+        0x00000110:    51000000    ...Q    DCD    1358954496
+        0x00000114:    52000000    ...R    DCD    1375731712
+        0x00000118:    ffffffff    ....    DCD    4294967295
+        0x0000011c:    52000008    ...R    DCD    1375731720
+        0x00000120:    53000004    ...S    DCD    1392508932
+        0x00000124:    53000000    ...S    DCD    1392508928
+        0x00000128:    52000004    ...R    DCD    1375731716
+        0x0000012c:    0000000f    ....    DCD    15
+        0x00000130:    54000000    ...T    DCD    1409286144
+        0x00000134:    54000004    ...T    DCD    1409286148
+        0x00000138:    54000008    ...T    DCD    1409286152
+        0x0000013c:    5400000c    ...T    DCD    1409286156
+
+====================================
+
+** Section #2
+
+    Name        : .debug_abbrev
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 372 (0x174)
+    Size        : 32 bytes (0x20)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #3
+
+    Name        : .debug_frame
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 404 (0x194)
+    Size        : 68 bytes (0x44)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #4
+
+    Name        : .debug_info
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 472 (0x1d8)
+    Size        : 180 bytes (0xb4)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #5
+
+    Name        : .debug_line
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 652 (0x28c)
+    Size        : 132 bytes (0x84)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #6
+
+    Name        : .symtab
+    Type        : SHT_SYMTAB (0x00000002)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 784 (0x310)
+    Size        : 160 bytes (0xa0)
+    Link        : Section 7 (.strtab)
+    Info        : Last local symbol no = 6
+    Alignment   : 4
+    Entry Size  : 16
+
+
+====================================
+
+** Section #7
+
+    Name        : .strtab
+    Type        : SHT_STRTAB (0x00000003)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 944 (0x3b0)
+    Size        : 188 bytes (0xbc)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #8
+
+    Name        : .note
+    Type        : SHT_NOTE (0x00000007)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 1132 (0x46c)
+    Size        : 20 bytes (0x14)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 4
+    Entry Size  : 0
+
+        Section     Segment
+    ====================================
+
+              1           0
+
+====================================
+
+** Section #9
+
+    Name        : .comment
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 1152 (0x480)
+    Size        : 692 bytes (0x2b4)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+    Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+    ArmLink --strict --callgraph --load_addr_map_info --map --symbols --xref --diag_suppress=9931 --ro_base=0x0 --rw_base=0x20000000 --cpu=Cortex-M0 --first=__Vectors --list=.\Listings\code.map --output=.\Objects\code.axf --entry=Reset_Handler --info=summarysizes,sizes,totals,unused,veneers
+
+    Input Comments:
+    
+    cm0dsasm.o
+    
+    Component: Arm Compiler for Embedded 6.21 Tool: armasm [5ec1f200]
+    armasm --debug --diag_suppress=9931,A1950W --cpu=Cortex-M0 --fpu=None --apcs=/softfp  -I./RTE/_Target_1,C:/Users/Student/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include,C:/Users/Student/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Dev
+
+====================================
+
+** Section #10
+
+    Name        : .shstrtab
+    Type        : SHT_STRTAB (0x00000003)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 1844 (0x734)
+    Size        : 112 bytes (0x70)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+

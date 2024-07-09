@@ -1,0 +1,165 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun May 12 11:47:00 2024
+| Host         : USCS-667 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AHBLITE_SYS_control_sets_placed.rpt
+| Design       : AHBLITE_SYS
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    87 |
+|    Minimum number of control sets                        |    87 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   268 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    87 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |    31 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |    17 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    27 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             125 |           67 |
+| No           | No                    | Yes                    |             267 |          151 |
+| No           | Yes                   | No                     |              29 |            9 |
+| Yes          | No                    | No                     |             504 |          265 |
+| Yes          | No                    | Yes                    |             307 |          111 |
+| Yes          | Yes                   | No                     |             124 |           53 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal    |                     Enable Signal                     |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------+-------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG      |                                                       |                                                             |                1 |              1 |         1.00 |
+|  fclk               |                                                       | uAHBVGA/uVGAInterface/HorzAddrCounter/counter_reg[7]_0      |                1 |              1 |         1.00 |
+|  fclk               |                                                       | uAHBVGA/uVGAInterface/VertAddrCounter/counter_reg[9]_1      |                1 |              1 |         1.00 |
+|  fclk               | uAHBMUX/hreadys                                       | u_CORTEXM0INTEGRATION/u_logic/APHASE_MUX_SEL_reg[3]         |                1 |              3 |         3.00 |
+|  fclk               | uAHBVGA/uVGAInterface/FreqDivider/TrigDiv             | uAHBVGA/uVGAInterface/HorzAddrCounter/counter[9]_i_1_n_0    |                1 |              3 |         3.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Iixpw6_i_1_n_0          |                                                             |                2 |              4 |         2.00 |
+|  fclk               | uAHBUART/uUART_TX/b_next                              | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               |                                                       | RESET_IBUF                                                  |                1 |              4 |         4.00 |
+|  uAHB7SEGDEC/p_0_in |                                                       | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Rskax6_i_1_n_0          |                                                             |                3 |              4 |         1.33 |
+|  fclk               | uAHBUART/uUART_RX/b_reg_reg[3]_0                      | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Dzvpw6_i_1_n_0          |                                                             |                1 |              4 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Vpgbx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               | uAHBUART/uUART_RX/b_next                              | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              4 |         2.00 |
+|  fclk               | uAHBUART/uFIFO_RX/r_ptr_reg[3]_i_1_n_0                | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              4 |         2.00 |
+|  fclk               | uAHBUART/uFIFO_TX/r_ptr_reg[0]_i_1_n_0                | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               | uAHBGPIO/w_en                                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              4 |         2.00 |
+|  fclk               | uAHBGPIO/last_HSEL_reg_0[0]                           | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              4 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Xsmiu6                  | u_CORTEXM0INTEGRATION/u_logic/V5vax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ydkiu6                  | u_CORTEXM0INTEGRATION/u_logic/Cfwpw6_i_1_n_0                |                3 |              5 |         1.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Stmiu6                  | u_CORTEXM0INTEGRATION/u_logic/O4sax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ztmiu6                  | u_CORTEXM0INTEGRATION/u_logic/De6bx6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Zgzpw6_i_1_n_0          | u_CORTEXM0INTEGRATION/u_logic/Tg0qw6_i_1_n_0                |                3 |              5 |         1.67 |
+|  fclk               | uAHBVGA/uvga_console/uvideo_ram/E[0]                  | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                1 |              5 |         5.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Jsmiu6                  | u_CORTEXM0INTEGRATION/u_logic/Lpwax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Gumiu6                  | u_CORTEXM0INTEGRATION/u_logic/C7wpw6_i_1_n_0                |                3 |              5 |         1.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Kloax6_i_1_n_0          | u_CORTEXM0INTEGRATION/u_logic/Ehpax6_i_1_n_0                |                4 |              5 |         1.25 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Etmiu6                  | u_CORTEXM0INTEGRATION/u_logic/Cbwpw6_i_1_n_0                |                4 |              5 |         1.25 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ltmiu6                  | u_CORTEXM0INTEGRATION/u_logic/C9wpw6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Cmlax6_i_1_n_0          | u_CORTEXM0INTEGRATION/u_logic/Whmax6_i_1_n_0                |                3 |              5 |         1.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/S5nax6_i_1_n_0          | u_CORTEXM0INTEGRATION/u_logic/Nznax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Numiu6                  | u_CORTEXM0INTEGRATION/u_logic/C5wpw6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/A5qax6_i_1_n_0          | u_CORTEXM0INTEGRATION/u_logic/U0rax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | uAHBVGA/uvga_console/uvideo_ram/cur_y_reg_reg[3][0]   | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Csmiu6                  | u_CORTEXM0INTEGRATION/u_logic/Eotax6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Qsmiu6                  | u_CORTEXM0INTEGRATION/u_logic/Cdwpw6_i_1_n_0                |                2 |              5 |         2.50 |
+|  fclk               | hresetn                                               |                                                             |                1 |              6 |         6.00 |
+|  fclk               | uAHBVGA/uVGAInterface/FreqDivider/TrigDiv             |                                                             |                2 |              6 |         3.00 |
+|  fclk               | uAHBVGA/uvga_console/uvideo_ram/scroll_reg[0]         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              7 |         3.50 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Mfyax6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |              8 |         2.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Nv9bx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |              8 |         2.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Pz9bx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/R1abx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | uAHBUART/uUART_TX/data_next_0                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Bcabx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |              8 |         2.67 |
+|  fclk               | uAHBUART/uUART_RX/data_next                           | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               |                                                       | uAHBVGA/uVGAInterface/HorzAddrCounter/counter_reg[9]_0      |                3 |              8 |         2.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/X7abx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |              8 |         2.67 |
+|  fclk               | uAHBGPIO/last_HWRITE_reg_2[0]                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | uAHBGPIO/last_HWRITE_reg_1[0]                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Z9abx6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |              8 |         2.67 |
+|  fclk               | uAHBGPIO/last_HWRITE_reg_3[0]                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                5 |              8 |         1.60 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/L8zax6_i_1_n_0          | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | uAHBGPIO/E[0]                                         | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                2 |              8 |         4.00 |
+|  fclk               | uAHBVGA/uVGAInterface/HorzAddrCounter/TrigHOut        | uAHBVGA/uVGAInterface/VertAddrCounter/counter[9]_i_1__0_n_0 |                3 |              9 |         3.00 |
+|  fclk               |                                                       | uAHBVGA/uVGAInterface/VertAddrCounter/SR[0]                 |                2 |              9 |         4.50 |
+|  fclk               |                                                       | uAHBVGA/uVGAInterface/HorzAddrCounter/SR[0]                 |                2 |             10 |         5.00 |
+|  fclk               | uAHBUART/uUART_RX/b_reg_reg[3]_0                      |                                                             |                2 |             12 |         6.00 |
+|  fclk               | uAHBGPIO/w_en                                         |                                                             |                2 |             12 |         6.00 |
+|  fclk               | uAHBVGA/uvga_console/uvideo_ram/reset_addr[0]_i_2_n_0 | uAHBVGA/uvga_console/uvideo_ram/reset_n_buf_reg[0]_0        |                4 |             13 |         3.25 |
+|  fclk               | uAHBVGA/uvga_image/uimage_ram/reset_addr[0]_i_1_n_0   | uAHBVGA/uvga_console/uvideo_ram/reset_n_buf_reg[0]_0        |                4 |             16 |         4.00 |
+|  fclk               | uAHBGPIO/gpio_dir0                                    | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |             16 |         5.33 |
+|  fclk               | uAHBGPIO/gpio_datain[15]_i_1_n_0                      | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                3 |             16 |         5.33 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Wnxax6_i_1_n_0          |                                                             |               10 |             24 |         2.40 |
+|  fclk               | uAHBGPIO/gpio_dataout0                                | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |                9 |             24 |         2.67 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Zgzpw6_i_1_n_0          |                                                             |               13 |             25 |         1.92 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ydkiu6                  |                                                             |               16 |             25 |         1.56 |
+|  fclk               | uAHBMUX/hreadys                                       | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |               14 |             26 |         1.86 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Stmiu6                  |                                                             |               16 |             27 |         1.69 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Cmlax6_i_1_n_0          |                                                             |               17 |             27 |         1.59 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Kloax6_i_1_n_0          |                                                             |               10 |             27 |         2.70 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Jsmiu6                  |                                                             |               11 |             27 |         2.45 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ztmiu6                  |                                                             |               16 |             27 |         1.69 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/S5nax6_i_1_n_0          |                                                             |               16 |             27 |         1.69 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/A5qax6_i_1_n_0          |                                                             |               17 |             27 |         1.59 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Csmiu6                  |                                                             |               15 |             27 |         1.80 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Qsmiu6                  |                                                             |               13 |             27 |         2.08 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Numiu6                  |                                                             |               15 |             27 |         1.80 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Etmiu6                  |                                                             |               17 |             27 |         1.59 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Xsmiu6                  |                                                             |               13 |             27 |         2.08 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Ltmiu6                  |                                                             |               16 |             27 |         1.69 |
+|  fclk               | u_CORTEXM0INTEGRATION/u_logic/Gumiu6                  |                                                             |               14 |             27 |         1.93 |
+|  fclk               | uAHBMUX/hreadys                                       |                                                             |               11 |             28 |         2.55 |
+|  fclk               | uAHBGPIO/last_HADDR_reg[3]_1[0]                       | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |               11 |             32 |         2.91 |
+|  fclk               | uAHBTIMER/uprescaler16/E[0]                           | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |               19 |             32 |         1.68 |
+|  fclk               |                                                       |                                                             |               66 |            124 |         1.88 |
+|  fclk               |                                                       | u_CORTEXM0INTEGRATION/reset_sync_reg_reg[4]                 |              149 |            259 |         1.74 |
++---------------------+-------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+
+

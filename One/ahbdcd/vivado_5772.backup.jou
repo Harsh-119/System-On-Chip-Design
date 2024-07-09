@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Feb 12 23:07:17 2024
+# Process ID: 5772
+# Current directory: C:/Users/Student/Desktop/277a/one/ahbdcd
+# Command line: vivado.exe C:\Users\Student\Desktop\277a\one\ahbdcd\ahbdcd.xpr
+# Log file: C:/Users/Student/Desktop/277a/one/ahbdcd/vivado.log
+# Journal file: C:/Users/Student/Desktop/277a/one/ahbdcd\vivado.jou
+# Running On: USCS-667, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16579 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Student/Desktop/277a/one/ahbdcd/ahbdcd.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source tb_AHBDCD.tcl
+save_wave_config {C:/Users/Student/Desktop/277a/one/ahbdcd/tb_AHBDCD_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Student/Desktop/277a/one/ahbdcd/tb_AHBDCD_behav.wcfg
+set_property xsim.view C:/Users/Student/Desktop/277a/one/ahbdcd/tb_AHBDCD_behav.wcfg [get_filesets sim_1]
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation
+open_wave_config C:/Users/Student/Desktop/277a/one/ahbdcd/tb_AHBDCD_behav.wcfg
+source tb_AHBDCD.tcl
+save_wave_config {C:/Users/Student/Desktop/277a/one/ahbdcd/tb_AHBDCD_behav.wcfg}
+close_sim

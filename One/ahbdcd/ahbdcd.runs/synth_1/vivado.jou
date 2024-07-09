@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Feb 12 23:13:28 2024
+# Process ID: 14536
+# Current directory: C:/Users/Student/Desktop/277a/one/ahbdcd/ahbdcd.runs/synth_1
+# Command line: vivado.exe -log AHBDCD.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AHBDCD.tcl
+# Log file: C:/Users/Student/Desktop/277a/one/ahbdcd/ahbdcd.runs/synth_1/AHBDCD.vds
+# Journal file: C:/Users/Student/Desktop/277a/one/ahbdcd/ahbdcd.runs/synth_1\vivado.jou
+# Running On: USCS-667, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16579 MB
+#-----------------------------------------------------------
+source AHBDCD.tcl -notrace

@@ -1,0 +1,129 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Mar 16 16:30:14 2024
+| Host         : USCS-667 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AHBLITE_SYS_control_sets_placed.rpt
+| Design       : AHBLITE_SYS
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    51 |
+|    Minimum number of control sets                        |    51 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   171 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    51 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    21 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    20 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             100 |           66 |
+| No           | No                    | Yes                    |             178 |          120 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             464 |          263 |
+| Yes          | No                    | Yes                    |             103 |           45 |
+| Yes          | Yes                   | No                     |              80 |           35 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG |                                              |                                              |                1 |              1 |         1.00 |
+|  fclk          |                                              | reset_sync_reg[2]_i_1_n_0                    |                1 |              4 |         4.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Rskax6_i_1_n_0 |                                              |                3 |              4 |         1.33 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Vpgbx6_i_1_n_0 | hresetn                                      |                1 |              4 |         4.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Dzvpw6_i_1_n_0 |                                              |                2 |              4 |         2.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Iixpw6_i_1_n_0 |                                              |                2 |              4 |         2.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Gumiu6         | u_CORTEXM0INTEGRATION/u_logic/C7wpw6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Jsmiu6         | u_CORTEXM0INTEGRATION/u_logic/Lpwax6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Kloax6_i_1_n_0 | u_CORTEXM0INTEGRATION/u_logic/Ehpax6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ltmiu6         | u_CORTEXM0INTEGRATION/u_logic/C9wpw6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Xsmiu6         | u_CORTEXM0INTEGRATION/u_logic/V5vax6_i_1_n_0 |                3 |              5 |         1.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/S5nax6_i_1_n_0 | u_CORTEXM0INTEGRATION/u_logic/Nznax6_i_1_n_0 |                1 |              5 |         5.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Numiu6         | u_CORTEXM0INTEGRATION/u_logic/C5wpw6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Qsmiu6         | u_CORTEXM0INTEGRATION/u_logic/Cdwpw6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Stmiu6         | u_CORTEXM0INTEGRATION/u_logic/O4sax6_i_1_n_0 |                3 |              5 |         1.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ydkiu6         | u_CORTEXM0INTEGRATION/u_logic/Cfwpw6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Cmlax6_i_1_n_0 | u_CORTEXM0INTEGRATION/u_logic/Whmax6_i_1_n_0 |                1 |              5 |         5.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Zgzpw6_i_1_n_0 | u_CORTEXM0INTEGRATION/u_logic/Tg0qw6_i_1_n_0 |                3 |              5 |         1.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Csmiu6         | u_CORTEXM0INTEGRATION/u_logic/Eotax6_i_1_n_0 |                3 |              5 |         1.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ztmiu6         | u_CORTEXM0INTEGRATION/u_logic/De6bx6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Etmiu6         | u_CORTEXM0INTEGRATION/u_logic/Cbwpw6_i_1_n_0 |                3 |              5 |         1.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/A5qax6_i_1_n_0 | u_CORTEXM0INTEGRATION/u_logic/U0rax6_i_1_n_0 |                2 |              5 |         2.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Mfyax6_i_1_n_0 | hresetn                                      |                2 |              8 |         4.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Nv9bx6_i_1_n_0 | hresetn                                      |                4 |              8 |         2.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Bcabx6_i_1_n_0 | hresetn                                      |                3 |              8 |         2.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/X7abx6_i_1_n_0 | hresetn                                      |                3 |              8 |         2.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/R1abx6_i_1_n_0 | hresetn                                      |                2 |              8 |         4.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Z9abx6_i_1_n_0 | hresetn                                      |                3 |              8 |         2.67 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/L8zax6_i_1_n_0 | hresetn                                      |                4 |              8 |         2.00 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Pz9bx6_i_1_n_0 | hresetn                                      |                3 |              8 |         2.67 |
+|  fclk          | uAHB2RAM/E[0]                                | hresetn                                      |                6 |              8 |         1.33 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Wnxax6_i_1_n_0 |                                              |               16 |             24 |         1.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ydkiu6         |                                              |               18 |             25 |         1.39 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Zgzpw6_i_1_n_0 |                                              |               13 |             25 |         1.92 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Numiu6         |                                              |               12 |             27 |         2.25 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ltmiu6         |                                              |               15 |             27 |         1.80 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Cmlax6_i_1_n_0 |                                              |               14 |             27 |         1.93 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Etmiu6         |                                              |               13 |             27 |         2.08 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Gumiu6         |                                              |               17 |             27 |         1.59 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Stmiu6         |                                              |               16 |             27 |         1.69 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Qsmiu6         |                                              |               12 |             27 |         2.25 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Kloax6_i_1_n_0 |                                              |               18 |             27 |         1.50 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Xsmiu6         |                                              |               16 |             27 |         1.69 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Jsmiu6         |                                              |               14 |             27 |         1.93 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Csmiu6         |                                              |               16 |             27 |         1.69 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/S5nax6_i_1_n_0 |                                              |               17 |             27 |         1.59 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/A5qax6_i_1_n_0 |                                              |               13 |             27 |         2.08 |
+|  fclk          | uAHBMUX/APHASE_MUX_SEL_reg[3]_5              | hresetn                                      |               14 |             27 |         1.93 |
+|  fclk          | u_CORTEXM0INTEGRATION/u_logic/Ztmiu6         |                                              |               16 |             27 |         1.69 |
+|  fclk          |                                              |                                              |               65 |             99 |         1.52 |
+|  fclk          |                                              | hresetn                                      |              119 |            174 |         1.46 |
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

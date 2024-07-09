@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1713037964">
+  <File Type="PA-TCL" Name="AHBLITE_SYS.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AHBLITE_SYS_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AHBLITE_SYS_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AHBLITE_SYS.vds"/>
+  <File Type="RDS-UTIL" Name="AHBLITE_SYS_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AHBLITE_SYS_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AHBLITE_SYS.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AHBLITE_SYS_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AHBLITE_SYS_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BRAM/AHB2BRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BRAM/AHB2BRAM.v"/>
+        <Attr Name="ImportTime" Val="1678074878"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_7SEG/AHB7SEGDEC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_7SEG/AHB7SEGDEC.v"/>
+        <Attr Name="ImportTime" Val="1632733976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BUS/AHBDCD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BUS/AHBDCD.v"/>
+        <Attr Name="ImportTime" Val="1632708776"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_GPIO/AHBGPIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_GPIO/AHBGPIO.v"/>
+        <Attr Name="ImportTime" Val="1632733976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BUS/AHBMUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_BUS/AHBMUX.v"/>
+        <Attr Name="ImportTime" Val="1632708776"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_TIMER/AHBTIMER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_TIMER/AHBTIMER.v"/>
+        <Attr Name="ImportTime" Val="1632733978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/AHBUART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/AHBUART.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/AHBVGASYS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/AHBVGASYS.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/CortexM0-DS/CORTEXM0INTEGRATION.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/CortexM0-DS/CORTEXM0INTEGRATION.v"/>
+        <Attr Name="ImportTime" Val="1506944330"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/baudgen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/baudgen.v"/>
+        <Attr Name="ImportTime" Val="1711846218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/CortexM0-DS/cortexm0ds_logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/CortexM0-DS/cortexm0ds_logic.v"/>
+        <Attr Name="ImportTime" Val="1506944330"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/counter.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/dual_port_ram_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/dual_port_ram_sync.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/fifo.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/font_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/font_rom.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_TIMER/prescaler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHB_TIMER/prescaler.v"/>
+        <Attr Name="ImportTime" Val="1632733978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_UART/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1632705176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_console.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_console.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_image.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_image.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_VGA/vga_sync.v"/>
+        <Attr Name="ImportTime" Val="1632705174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHBLITE_SYS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/lab_files/FPGA/AHBLITE_SYS.v"/>
+        <Attr Name="ImportTime" Val="1632733978"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Student/Desktop/277a/Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_LED/AHB2LED.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Five/Vivado/project_1/project_1.srcs/sources_1/imports/FPGA/AHB_LED/AHB2LED.v"/>
+        <Attr Name="ImportTime" Val="1647731436"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AHBLITE_SYS"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Given/Lab6_Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../OneDrive - sjsu.edu/Masters/EE277A Embedded SOC Design/Lab/6/Given/Lab6_Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1713035631"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

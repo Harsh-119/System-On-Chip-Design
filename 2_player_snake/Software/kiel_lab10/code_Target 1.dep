@@ -1,0 +1,48 @@
+Dependencies for Project 'code', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
+F (.\Device\cm0dsasm.s)(0x663D38CE)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARMCM0\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1" --pd "_RTE_ SETA 1"--list .\cm0dsasm.lst --xref -o .\cm0dsasm.o --depend .\cm0dsasm.d)
+F (.\Device\edk_api.c)(0x663D38CE)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I .\Application -I .\Core -I .\Device-I.\RTE\_Target_1-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARMCM0\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="539" -D_RTE_ -DARMCM0 -D_RTE_-o .\edk_api.o --omf_browse .\edk_api.crf --depend .\edk_api.d)
+I (Device\EDK_CM0.h)(0x663D38CE)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8F0FB2)
+I (Device\edk_driver.h)(0x663D38CE)
+I (.\Core\core_cm0.h)(0x663D38CE)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\Core\core_cmInstr.h)(0x663D38CE)
+I (.\Core\core_cmFunc.h)(0x663D38CE)
+I (Device\edk_api.h)(0x663D7125)
+F (.\Device\edk_api.h)(0x663D7125)()
+F (.\Device\EDK_CM0.h)(0x663D38CE)()
+F (.\Device\edk_driver.c)(0x663D38CE)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I .\Application -I .\Core -I .\Device-I.\RTE\_Target_1-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARMCM0\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="539" -D_RTE_ -DARMCM0 -D_RTE_-o .\edk_driver.o --omf_browse .\edk_driver.crf --depend .\edk_driver.d)
+I (Device\EDK_CM0.h)(0x663D38CE)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8F0FB2)
+I (Device\edk_driver.h)(0x663D38CE)
+I (.\Core\core_cm0.h)(0x663D38CE)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\Core\core_cmInstr.h)(0x663D38CE)
+I (.\Core\core_cmFunc.h)(0x663D38CE)
+I (Device\edk_api.h)(0x663D7125)
+F (.\Device\edk_driver.h)(0x663D38CE)()
+F (.\Device\retarget.c)(0x663D38CE)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I .\Application -I .\Core -I .\Device-I.\RTE\_Target_1-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARMCM0\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="539" -D_RTE_ -DARMCM0 -D_RTE_-o .\retarget.o --omf_browse .\retarget.crf --depend .\retarget.d)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\time.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\rt_misc.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (Device\EDK_CM0.h)(0x663D38CE)
+I (Device\edk_driver.h)(0x663D38CE)
+I (.\Core\core_cm0.h)(0x663D38CE)
+I (.\Core\core_cmInstr.h)(0x663D38CE)
+I (.\Core\core_cmFunc.h)(0x663D38CE)
+I (Device\edk_api.h)(0x663D7125)
+F (.\Application\main.c)(0x663D7813)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I .\Application -I .\Core -I .\Device-I.\RTE\_Target_1-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARMCM0\Include-IC:\Users\016767491\AppData\Local\Arm\Packs\ARM\Cortex_DFP\1.0.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="539" -D_RTE_ -DARMCM0 -D_RTE_-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (.\Device\EDK_CM0.h)(0x663D38CE)
+I (.\Core\core_cm0.h)(0x663D38CE)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\Core\core_cmInstr.h)(0x663D38CE)
+I (.\Core\core_cmFunc.h)(0x663D38CE)
+I (.\Device\edk_driver.h)(0x663D38CE)
+I (.\Device\edk_api.h)(0x663D7125)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8F0FB2)
+F (.\Core\core_cm0.h)(0x663D38CE)()
+F (.\Core\core_cmFunc.h)(0x663D38CE)()
+F (.\Core\core_cmInstr.h)(0x663D38CE)()

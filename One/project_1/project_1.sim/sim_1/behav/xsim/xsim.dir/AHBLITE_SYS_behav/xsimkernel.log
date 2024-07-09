@@ -1,0 +1,7 @@
+Running: xsim.dir/AHBLITE_SYS_behav/xsimk.exe -simmode gui -wdb AHBLITE_SYS_behav.wdb -simrunnum 0 -socket 53995
+Design successfully loaded
+Design Loading Memory Usage: 14736 KB (Peak: 14736 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 20968 KB (Peak: 20968 KB)
+Simulation CPU Usage: 171 ms

@@ -1,0 +1,41 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\code.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\code.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Apr 24 18:18:18 2024
+<BR><P>
+<H3>Maximum Stack Usage =          0 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1]">GPIO_Handler</a> from cm0dsasm.o(.text) referenced from cm0dsasm.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from cm0dsasm.o(.text) referenced from cm0dsasm.o(RESET)
+ <LI><a href="#[3]">Timer_Handler</a> from cm0dsasm.o(.text) referenced from cm0dsasm.o(RESET)
+ <LI><a href="#[2]">UART_Handler</a> from cm0dsasm.o(.text) referenced from cm0dsasm.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, cm0dsasm.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> cm0dsasm.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>Timer_Handler</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, cm0dsasm.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> cm0dsasm.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>UART_Handler</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, cm0dsasm.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> cm0dsasm.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>GPIO_Handler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cm0dsasm.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> cm0dsasm.o(RESET)
+</UL><P>
+<H3>
+Local Symbols
+</H3><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

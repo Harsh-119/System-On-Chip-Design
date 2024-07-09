@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# updatemem v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar  7 12:21:33 2024
+# Process ID: 7292
+# Current directory: C:/Users/016767491/Lab3
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vivado/2022.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo bram.mmi -data code.mem -proc my_bram -bit C:/Users/016767491/Lab3/Lab3.runs/impl_1/AHBLITE_SYS.bit -out reflash.bit -force -debug
+# Log file: C:/Users/016767491/Lab3/updatemem.log
+# Journal file: C:/Users/016767491/Lab3\updatemem.jou
+# Running On: IMS-C132ND3, OS: Windows, CPU Frequency: 1382 MHz, CPU Physical cores: 4, Host memory: 16905 MB
+#-----------------------------------------------------------
+source C:/Xilinx/Vivado/2022.2/scripts/updatemem/main.tcl -notrace
