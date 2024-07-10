@@ -22,7 +22,7 @@
 1. Programming an SoC using C Language &rarr; [Eight](Eight)
 1. Application Programming Interface (API) &rarr; [Nine](Nine)
 1. Combining all topics to create a 2-player snake game &rarr; [2_player_snake](2_player_snake)
-1. Creating a novel Arithmetic guessing game 2_player_snake &rarr; [Project](Project)
+1. Creating a novel Arithmetic guessing game &rarr; [Project](Project)
    
 
 
