@@ -1,4 +1,4 @@
-# Timer, GPIO, and 7-Segment Peripherals
+# LED, Timer, GPIO and 7-Segment Peripheral 
 
 This lab focuses on implementing three AHB peripherals: an internal timer, a GPIO, and a 7-segment display on an FPGA. 
 The lab implements both hardware design and software programming aspects. 
