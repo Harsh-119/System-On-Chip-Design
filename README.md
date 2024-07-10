@@ -14,15 +14,16 @@
 ## Topics Explored
 1. Arm-Based System-on-Chip Design
 1. The Arm Cortex-M0 Processor Architecture
-1. AMBA 3 AHB-Lite Bus Architecture
-1. AHB VGA Peripheral
-1. AHB UART Peripheral 
-1. LED, Timer, GPIO and 7-Segment Peripherals
-1. Interrupt Mechanisms 
-1. Programming an SoC using C Language
-1. Application Programming Interface (API)
-1. Combining all topics to create a 2 player snake game
-1. Creating a novel Arithmetic guessing game
+1. AMBA 3 AHB-Lite Bus Architecture &rarr; ([One](One), [Two](Two), [Three](Three))
+1. AHB VGA Peripheral &rarr; [Four](Four)
+1. AHB UART Peripheral &rarr; [Five](Five)
+1. LED, Timer, GPIO and 7-Segment Peripherals &rarr; [Six](Six)
+1. Interrupt Mechanisms &rarr; [Seven](Seven)
+1. Programming an SoC using C Language &rarr; [Eight](Eight)
+1. Application Programming Interface (API) &rarr; [Nine](Nine)
+1. Combining all topics to create a 2-player snake game &rarr; [2_player_snake](2_player_snake)
+1. Creating a novel Arithmetic guessing game 2_player_snake &rarr; [Project](Project)
+   
 
 
 ## Update Bitstream Guide
